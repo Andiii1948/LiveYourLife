@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Profil \"1\"": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\Andii\\Desktop\\AltVServer2024\\altv-server.exe",
+      "workingDirectory": "C:\\Users\\Andii\\Desktop\\AltVServer2024"
+    }
+  }
+}

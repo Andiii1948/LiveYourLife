@@ -1,0 +1,199 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\Users\Andii\Desktop\AltVServer2024\resources\LiveYourLife</BaseOutputPath>
+	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="models\Characters_Tablet_Tutorial.cs" />
+    <Compile Include="models\Accounts.cs" />
+    <Compile Include="models\AccountsCharacters.cs" />
+    <Compile Include="models\CharactersOwnedClothes.cs" />
+    <Compile Include="models\CharactersPhoneChatMessages.cs" />
+    <Compile Include="models\CharactersPhoneChats.cs" />
+    <Compile Include="models\CharactersPhoneContacts.cs" />
+    <Compile Include="models\Characters_Bank.cs" />
+    <Compile Include="models\Characters_Inventory.cs" />
+    <Compile Include="models\Characters_LastPos.cs" />
+    <Compile Include="models\Characters_Licenses.cs" />
+    <Compile Include="models\Characters_Minijobs.cs" />
+    <Compile Include="models\Characters_Permissions.cs" />
+    <Compile Include="models\Characters_Skin.cs" />
+    <Compile Include="models\Characters_Tablet_Apps.cs" />
+    <Compile Include="models\Characters_Tattoos.cs" />
+    <Compile Include="models\Characters_Wanteds.cs" />
+    <Compile Include="models\gtaContext.cs" />
+    <Compile Include="models\LogsLogin.cs" />
+    <Compile Include="models\Logs_Company.cs" />
+    <Compile Include="models\Logs_Death.cs" />
+    <Compile Include="models\Logs_Faction.cs" />
+    <Compile Include="models\ServerFaction_Dispatch.cs" />
+    <Compile Include="models\Server_All_Vehicles.cs" />
+    <Compile Include="models\Server_All_Vehicle_Mods.cs" />
+    <Compile Include="models\Server_Animations.cs" />
+    <Compile Include="models\Server_ATM.cs" />
+    <Compile Include="models\Server_Banks.cs" />
+    <Compile Include="models\Server_Bank_Paper.cs" />
+    <Compile Include="models\Server_Barbers.cs" />
+    <Compile Include="models\Server_Blips.cs" />
+    <Compile Include="models\Server_Clothes.cs" />
+    <Compile Include="models\Server_Clothes_Shops.cs" />
+    <Compile Include="models\Server_Clothes_Shops_Items.cs" />
+    <Compile Include="models\Server_Clothes_Storages.cs" />
+    <Compile Include="models\Server_Companys.cs" />
+    <Compile Include="models\Server_Company_Members.cs" />
+    <Compile Include="models\Server_Death.cs" />
+    <Compile Include="models\Server_Doors.cs" />
+    <Compile Include="models\Server_Factions.cs" />
+    <Compile Include="models\Server_Faction_Clothes.cs" />
+    <Compile Include="models\Server_Faction_Members.cs" />
+    <Compile Include="models\Server_Faction_Positions.cs" />
+    <Compile Include="models\Server_Faction_Ranks.cs" />
+    <Compile Include="models\Server_Faction_Storage_Items.cs" />
+    <Compile Include="models\Server_Farming_Producer.cs" />
+    <Compile Include="models\Server_Farming_Spots.cs" />
+    <Compile Include="models\Server_Fuel_Spots.cs" />
+    <Compile Include="models\Server_Fuel_Stations.cs" />
+    <Compile Include="models\Server_Garages.cs" />
+    <Compile Include="models\Server_Garage_Slots.cs" />
+    <Compile Include="models\Server_Hotels.cs" />
+    <Compile Include="models\Server_Hotels_Apartments.cs" />
+    <Compile Include="models\Server_Hotels_Storage.cs" />
+    <Compile Include="models\Server_Houses.cs" />
+    <Compile Include="models\Server_Houses_Interiors.cs" />
+    <Compile Include="models\Server_Houses_Renter.cs" />
+    <Compile Include="models\Server_Houses_Storage.cs" />
+    <Compile Include="models\Server_Items.cs" />
+    <Compile Include="models\Server_Jobs.cs" />
+    <Compile Include="models\Server_Licenses.cs" />
+    <Compile Include="models\Server_Markers.cs" />
+    <Compile Include="models\Server_Minijob_Busdriver_Route.cs" />
+    <Compile Include="models\Server_Minijob_Busdriver_Spots.c.cs" />
+    <Compile Include="models\Server_Minijob_Garbage_Spots.c.cs" />
+    <Compile Include="models\Server_Peds.cs" />
+    <Compile Include="models\Server_Shops.cs" />
+    <Compile Include="models\Server_Shops_Items.cs" />
+    <Compile Include="models\Server_Tablet_Apps.cs" />
+    <Compile Include="models\Server_Tablet_Events.cs" />
+    <Compile Include="models\Server_Tablet_Notes.cs" />
+    <Compile Include="models\Server_Tattoos.cs" />
+    <Compile Include="models\Server_Tattoo_Shops.cs" />
+    <Compile Include="models\Server_Teleports.cs" />
+    <Compile Include="models\Server_Vehicles.cs" />
+    <Compile Include="models\Server_Vehicles_Mod.cs" />
+    <Compile Include="models\Server_Vehicle_Items.cs" />
+    <Compile Include="models\Server_Vehicle_Shops.cs" />
+    <Compile Include="models\Server_Vehicle_Shops_Items.cs" />
+    <Compile Include="models\Server_Wanteds.cs" />
+    <Compile Include="Model\CharactersMinijobs.cs" />
+    <Compile Include="Database\DatabaseHandler.cs" />
+    <Compile Include="Factions\ACLS\Functions.cs" />
+    <Compile Include="Factions\Justice\Functions.cs" />
+    <Compile Include="Factions\LSFD\Functions.cs" />
+    <Compile Include="Factions\LSFS\Functions.cs" />
+    <Compile Include="Factions\LSPD\Functions.cs" />
+    <Compile Include="Factories\ClassicColshape.cs" />
+    <Compile Include="Factories\ClassicPlayer.cs" />
+    <Compile Include="Factories\ClassicVehicle.cs" />
+    <Compile Include="Factories\Factories.cs" />
+    <Compile Include="Handler\AntiCheatHandler.cs" />
+    <Compile Include="Handler\BankHandler.cs" />
+    <Compile Include="Handler\CharCreatorHandler.cs" />
+    <Compile Include="Handler\Commands.cs" />
+    <Compile Include="Handler\DeathHandler.cs" />
+    <Compile Include="Handler\FactionHandler.cs" />
+    <Compile Include="Handler\FarmingHandler.cs" />
+    <Compile Include="Handler\FuelStationHandler.cs" />
+    <Compile Include="Handler\FunkHandler.cs" />
+    <Compile Include="Handler\GarageHandler.cs" />
+    <Compile Include="Handler\HotelHandler.cs" />
+    <Compile Include="Handler\HouseHandler.cs" />
+    <Compile Include="Handler\HUDHandler.cs" />
+    <Compile Include="Handler\InventoryHandler.cs" />
+    <Compile Include="Handler\KeyHandler.cs" />
+    <Compile Include="Handler\LoginHandler.cs" />
+    <Compile Include="Handler\RaycastHandler.cs" />
+    <Compile Include="Handler\RegisterHandler.cs" />
+    <Compile Include="Handler\ShopHandler.cs" />
+    <Compile Include="Handler\TimerHandler.cs" />
+    <Compile Include="Handler\TownhallHandler.cs" />
+    <Compile Include="Handler\VehicleHandler.cs" />
+    <Compile Include="Handler\WeaponHandler.cs" />
+    <Compile Include="Handler\WeatherHandler.cs" />
+    <Compile Include="Main\Global.cs" />
+    <Compile Include="Minijobs\Busfahrer\Main.cs" />
+    <Compile Include="Minijobs\Busfahrer\Model.cs" />
+    <Compile Include="Minijobs\Elektrolieferant\Main.cs" />
+    <Compile Include="Minijobs\Müllmann\Main.cs" />
+    <Compile Include="Minijobs\Müllmann\Model.cs" />
+    <Compile Include="Minijobs\Pilot\Main.cs" />
+    <Compile Include="Handler\SmartphoneHandler.cs" />
+    <Compile Include="Handler\TabletHandler.cs" />
+    <Compile Include="Model\Characters.cs" />
+    <Compile Include="Model\CharactersBank.cs" />
+    <Compile Include="Model\CharactersClothes.cs" />
+    <Compile Include="Model\CharactersInventory.cs" />
+    <Compile Include="Model\CharactersLicenses.cs" />
+    <Compile Include="Model\CharactersPhone.cs" />
+    <Compile Include="Model\CharactersTablet.cs" />
+    <Compile Include="Model\CharactersTattoos.cs" />
+    <Compile Include="Model\CharactersWanteds.cs" />
+    <Compile Include="Model\ServerAnimations.cs" />
+    <Compile Include="Model\ServerATM.cs" />
+    <Compile Include="Model\ServerAllVehicles.cs" />
+    <Compile Include="Model\ServerBankPapers.cs" />
+    <Compile Include="Model\ServerBanks.cs" />
+    <Compile Include="Model\ServerBarbers.cs" />
+    <Compile Include="Model\ServerBlips.cs" />
+    <Compile Include="Model\ServerClothes.cs" />
+    <Compile Include="Model\ServerClothesShops.cs" />
+    <Compile Include="Model\ServerClothesStorages.cs" />
+    <Compile Include="Model\ServerCompanys.cs" />
+    <Compile Include="Model\ServerDoors.cs" />
+    <Compile Include="Model\ServerFactions.cs" />
+    <Compile Include="Model\ServerFarmingSpots.cs" />
+    <Compile Include="Model\ServerFuelStations.cs" />
+    <Compile Include="Model\ServerGarages.cs" />
+    <Compile Include="Model\ServerHotels.cs" />
+    <Compile Include="Model\ServerHouses.cs" />
+    <Compile Include="Model\ServerItems.cs" />
+    <Compile Include="Model\ServerJobs.cs" />
+    <Compile Include="Model\ServerPeds.cs" />
+    <Compile Include="Model\ServerShops.cs" />
+    <Compile Include="Model\ServerShopsItems.cs" />
+    <Compile Include="Model\ServerTattoos.cs" />
+    <Compile Include="Model\ServerTattooShops.cs" />
+    <Compile Include="Model\ServerVehicles.cs" />
+    <Compile Include="Model\ServerVehicleShops.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Services\LoggingService.cs" />
+    <Compile Include="Utils\AntiCheat.cs" />
+    <Compile Include="Utils\Constants.cs" />
+    <Compile Include="Utils\Extensions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AltV.Net" Version="16.0.10" />
+    <PackageReference Include="AltV.Net.Async" Version="16.0.10" />
+    <PackageReference Include="AltV.Net.CApi" Version="16.0.10" />
+    <PackageReference Include="AltV.Net.Resources.Chat.Api" Version="16.0.10" />
+    <PackageReference Include="AltV.Net.Shared" Version="16.0.10" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
+  </ItemGroup>
+
+</Project>
